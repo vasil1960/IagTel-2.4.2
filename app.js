@@ -19,10 +19,11 @@ Ext.application({
     views: [
         'Main',
         'Home',
-        'BaseList'
+        'BaseList',
+        'Search'
     ],
     controllers: [
-        'BaseController'
+        'BaseController',
     ],
 
     stores: [
