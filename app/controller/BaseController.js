@@ -9,9 +9,11 @@ Ext.define('VT.controller.BaseController', {
             dgsBtn: 'button#dgsBtn',
             allBtn: 'button#allBtn',
             btnBackToHome: '#btnBackToHome',
-            baselist: 'list#baselist',
+            // baselist: 'list#baselist',
             main: 'navigationview#main',
-            baselist: 'baselist'
+            baselist: 'baselist',
+            searchBtn: 'button#searchBtn',
+            searchByNameBtn: 'button#btnSearchByName'
 
         },
         control: {
@@ -32,6 +34,12 @@ Ext.define('VT.controller.BaseController', {
             },
             'baselist': {
                 leafitemtap : 'onLeafItemTap'
+            },
+            searchBtn: {
+                tap: 'onSearchBtnTap'
+            },
+            searchByNameBtn: {
+                tap: 'onBtnSearchByName'
             }
 
         }
@@ -67,6 +75,15 @@ Ext.define('VT.controller.BaseController', {
         baseStore.load();
         main.setActiveItem(1);
         // Ext.Viewport.setMasked(false);
+    },
+
+    onSearchBtnTap: function(){
+        var main = Ext.getCmp('main');
+        main.setActiveItem(2);
+    },
+
+    onBtnSearchByName: function(){
+        console.log('search by name');
     },
     
     onLeafItemTap: function(nestedList, list, index, target, record) {

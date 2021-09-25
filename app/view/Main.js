@@ -25,6 +25,11 @@ Ext.define('VT.view.Main', {
                 flex : 1
                 
             },
+            {
+                xtype: 'search',
+                title: 'Търсене в цялата база',
+                flex : 1
+            },
         ]
     }
 });

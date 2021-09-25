@@ -142,6 +142,7 @@ Ext.define('VT.view.Home', {
                                 xtype: 'button',
                                 flex: 1,
                                 id: 'searchBtn',
+                                ui: 'action',
                                 iconAlign: 'top',
                                 iconCls: 'search',
                                 text: 'Търсене'

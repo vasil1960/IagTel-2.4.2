@@ -3,8 +3,7 @@ Ext.define('VT.view.BaseList', {
     alias: 'widget.baselist',
 
     config: {
-        id: 'baseList',
-
+        
         store: 'BaseStore',
 
         onItemDisclosure: true,
